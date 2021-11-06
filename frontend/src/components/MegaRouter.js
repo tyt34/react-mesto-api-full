@@ -17,17 +17,7 @@ function MegaRouter() {
   const [isAlt, setIsAlt] = React.useState('Изображение информирующее, что всё плохо!')
   const [isRes, setIsRes] = React.useState(true)
   const [isEmail, setIsEmail] = React.useState('')
-  /*
-  React.useEffect(() => {
-    document.title = `Turbo Mesto For You Bro App`;
-  });
-  */
-  /*
-  const [userData, setUserData] = React.useState({
-    identifier: '',
-    password: ''
-  })
-  */
+
   const history = useHistory()
 
   function closePopupInfo() {
@@ -64,17 +54,11 @@ function MegaRouter() {
       auth.getContent(jwt)
         .then( (res) => {
           if (res.email) {
-            /*
-            setUserData({
-              username: res.username,
-              email: res.email
-            })
-            */
             setLoggedIn(true)
             history.push('/')
           }
         })
-        .catch( err => console.log('MR-Ошибка1: ', err))
+        .catch( err => console.log('MR-Ошибка 2: ', err))
     }
   }
 
@@ -91,7 +75,7 @@ function MegaRouter() {
         setIsTitle('Что-то пошло не так! Попробуйте ещё раз.')
         setIsAlt('Изображение информирующее, что всё плохо!')
         setisInfoOpen(true)
-        console.log('MR-Ошибка2: ', err)
+        console.log('MR-Ошибка 3: ', err)
       })
   }
 
