@@ -1,4 +1,5 @@
-export const BASE_URL = 'http://localhost:3000'
+//export const BASE_URL = 'http://localhost:3000'
+export const BASE_URL = 'http://api.good.nomoredomains.xyz'
 
 export const getResponseData = (res) => {
   if (!res.ok) {

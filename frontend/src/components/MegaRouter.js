@@ -40,7 +40,7 @@ function MegaRouter() {
           history.push('/')
         }
       })
-      .catch( err => console.log('MR-Ошибка1: ', err))
+      .catch( err => console.log('MR-Ошибка 1: ', err))
   }
 
   React.useEffect(() => {

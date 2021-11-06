@@ -1,5 +1,6 @@
 const options = {
-  url: 'http://localhost:3000',
+  //url: 'http://localhost:3000',
+  url: 'http://api.good.nomoredomains.xyz',
 }
 
 class Api {
