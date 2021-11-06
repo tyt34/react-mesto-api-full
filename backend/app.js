@@ -25,7 +25,7 @@ const options = {
   credentials: true,
 };
 
-app.use('*', cors(options));
+app.use('*', cors(options.origin));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
