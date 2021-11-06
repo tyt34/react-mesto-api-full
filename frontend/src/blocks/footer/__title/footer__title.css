@@ -1,0 +1,31 @@
+.footer__title {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #545454;
+  /*padding-bottom: 36px;*/
+  margin-top: 48px;
+  margin-left: 19px;
+  margin-bottom: 36px;
+  /*color: #545454;*/
+  /*background-color: black;*/
+  /*background: black;*/
+
+}
+@media screen and (min-width: 1280px) {
+  .footer__title {
+    margin-left: 0;
+    margin-top: 67px;
+    margin-bottom: 60px;
+    /*padding-bottom: 60px;*/
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+/*
+html {
+  background-color: black;
+}
+*/
