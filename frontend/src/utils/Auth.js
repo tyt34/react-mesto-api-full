@@ -1,5 +1,10 @@
-//export const BASE_URL = 'http://localhost:3000'
-export const BASE_URL = 'http://api.good.nomoredomains.xyz'
+export let BASE_URL
+if (process.env.REACT_APP_PUBLIC_URL) {
+  BASE_URL = 'http://localhost:3000'
+} else {
+  BASE_URL = 'https://api.good.nomoredomains.xyz'
+}
+console.log('auth', BASE_URL)
 
 export const getResponseData = (res) => {
   if (!res.ok) {

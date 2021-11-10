@@ -1,15 +1,15 @@
-const options = {
-  //url: 'http://localhost:3000',
-  url: 'http://api.good.nomoredomains.xyz',
-}
-
 class Api {
-  constructor(options) {
-    this._url = options.url
+  constructor() {
     this._me = '/users/me'
     this._ava ='/users/me/avatar'
     this._cards = '/cards'
     this._likes = '/likes'
+    if (process.env.REACT_APP_PUBLIC_URL) {
+      this._url = 'http://localhost:3000'
+    } else {
+      this._url = 'https://api.good.nomoredomains.xyz'
+    }
+    console.log('api ', this._url)
   }
 
   _getResponseData(res) {
@@ -117,5 +117,5 @@ class Api {
   }
 }
 
-const api = new Api(options)
+const api = new Api()
 export default api
