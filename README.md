@@ -4,7 +4,7 @@
 ![](https://shields.io/badge/-CSS-blue)
 ![](https://shields.io/badge/-JavaScript-yellow)
 ![](https://shields.io/badge/-Node.js-3E863D)
-![](https://shields.io/badge/-React-05D9FF)
+![](https://shields.io/badge/-React.JS-05D9FF)
 ![](https://shields.io/badge/-MongoDB-00E661)
 
 ## Функционал приложения 
