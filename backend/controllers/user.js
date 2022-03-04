@@ -135,7 +135,7 @@ module.exports.login = (req, res, next) => {
   if (email === undefined || password === undefined) {
     throw new WrongKeys();
   }
-  User.findOne({ email }).select('+password')
+  User.findOne({ email: email.toLowerCase() }).select('+password')
     .then((user) => {
       if (!user) {
         return Promise.reject(new WrongPass());
