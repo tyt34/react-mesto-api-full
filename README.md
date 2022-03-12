@@ -32,9 +32,13 @@ REACT_APP_PUBLIC_URL=true
 ```
 Если вы находитесь в папке `react-mesto-api-full-main`, то это можно сделать с помощью **команды**:
 
-```cd frontend/ && echo -e "PORT=3001 \nREACT_APP_PUBLIC_URL=true" > .env && npm i && npm start```
+```
+cd frontend/ && echo -e "PORT=3001 \nREACT_APP_PUBLIC_URL=true" > .env && npm i && npm start
+```
 
 
 3. Параллельно зайдите в папку `backend`. Установите зависимости. Запустите программу. Если вы находитесь в папке `react-mesto-api-full-main`, то это можно сделать с помощью **команды**:
 
-```cd backend/ && npm i && npm start```
+```
+cd backend/ && npm i && npm start
+```
